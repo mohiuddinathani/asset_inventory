@@ -7,7 +7,7 @@ CREATE TABLE cves (
     cvss_vector VARCHAR(100),
     published_date TIMESTAMPTZ,
     latest_updated_date TIMESTAMPTZ,
-    references JSONB
+    reference_links JSONB  -- Renamed from 'references'
 );
 
 -- Create the kev table for CISA's Known Exploited Vulnerabilities
